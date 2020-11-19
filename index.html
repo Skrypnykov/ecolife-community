@@ -18,19 +18,16 @@
     <title>Головна сторінка</title>
   </head>
   <body>
-    
-    <!-- header -->
+
+ <!-- header -->
     <header class="container blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-2 pt-1">
             </div>
             <div class="col-8 text-center">
-                <a class="blog-header-logo header-logo" href="#">EcoLife Community</a>
+                <a class="blog-header-logo header-logo" href="#">EcoLife Community</a><br>
             </div>
             <div class="col-2 d-flex justify-content-end align-items-center">
-                <a class="text-muted" href="#" aria-label="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
-                 </a>
                 <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
             </div>
         </div>
@@ -46,7 +43,7 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Екологічні проблеми</a>
+                        <a class="nav-link header-nav-link" href="#">Екологічні проблеми</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -73,33 +70,64 @@
         </nav>
     </div> <!-- end navbar -->
 
-    <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/1.jpg" class="d-block w-100" alt="...">
+    <section id="featured">
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/111.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/211.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/311.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><!-- end carousel -->
+    </section>
+
+    
+
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Learn more</a>
         </div>
-        <div class="carousel-item">
-            <img src="img/2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="img/3.jpg" class="d-block w-100" alt="...">
-        </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div><!-- end carousel -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- footer -->
@@ -115,17 +143,18 @@
                     <!-- links -->
                     <h5 class="mt-3 mb-4">Інформаційний портал</h5>
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Екотуризм</a>
+
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#!">Екологічні проблеми</a>
                         </li>
-                        <li>
-                            <a href="#!">Екологічні проблеми</a>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#!">Захист тварин</a>
                         </li>
-                        <li>
-                            <a href="#!">Захист тварин</a>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#!">Екотуризм</a>
                         </li>
-                        <li>
-                            <a href="#!">Зворотній зв’язок</a>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#!">Зворотній зв’язок</a>
                         </li>
                     </ul>
                 </div>
@@ -133,7 +162,7 @@
                     <nav class="navbar navbar-light mt-5 p-0 justify-content-end">
                         <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </nav>
                 </div><!-- end grid column -->
@@ -141,9 +170,7 @@
         </div> <!-- end footer links -->
     
         <!-- copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#!">BEST APP</a>
-        </div> <!-- end copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: BEST APP</div> <!-- end copyright -->
   
     </footer> <!-- end footer -->
 
