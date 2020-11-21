@@ -126,7 +126,7 @@ body {
 	color: #5F7C59;
 }
 .list-group {
-	margin: 100px 0 45px;
+	margin: 100px 0 20px;
 }
 .list-group-item {
 	margin-bottom: 23px;
@@ -155,6 +155,11 @@ body {
 	padding-left: 0;
 	padding-bottom: 0;
 }
+.form-control:focus {
+	box-shadow: none;
+	border-bottom: 1px solid #ced4da;
+}
+
 .form-inline .form-control {
 	width: 250px;
 }
