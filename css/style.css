@@ -10,7 +10,6 @@
 body {
 	background: #F7FFF9;
 }
-
 .container-content {
 	max-width: 1260px ;
 	margin: 0 auto;
@@ -51,6 +50,7 @@ body {
 		margin-top: 0;
 	}
 }
+
 /* main */
 .main {
 	margin-bottom: 171px;
@@ -116,20 +116,20 @@ body {
 	color: #5F7C59;
 	margin-top: 71px;
 }
+
 /* footer */
 .footer-nav-title {
 	margin-top: 35px;
 	font-family: Raleway;
 	font-weight: 400;
 	font-size: 22px;
-	line-height: 26px;
 	color: #5F7C59;
 }
 .list-group {
 	margin: 100px 0 45px;
 }
 .list-group-item {
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	border:none;
 	padding: 0;
 	background-color: transparent;
@@ -138,7 +138,6 @@ body {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
 	color: #272727;
 }
 .list-group-link:hover {
@@ -155,7 +154,6 @@ body {
 	border-left: 0;
 	padding-left: 0;
 	padding-bottom: 0;
-
 }
 .form-inline .form-control {
 	width: 250px;
@@ -166,28 +164,27 @@ body {
 	font-size: 14px;
 	line-height: 16.44px;
 	color: #525252;
-  }
-  .social-wrapper {
-	  margin-top: 200px;
-  }
-  .social-item-link {
-	  display: inline-block;
-	  width: 50px;
-	  height: 50px;
-	  border-radius: 50%;
-	  text-align: center;
-	  line-height: 45px;
-  }
-  .social-item-linkedin {
+}
+.social-wrapper {
+  margin-top: 177px;
+}
+.social-item-link {
+  	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 45px;
+}
+.social-item-linkedin {
 	background-color: #007AB9;
-  }
-  .social-item-viber {
+}
+.social-item-viber {
 	background-color: transparent;
-  }
-  .social-item-telegram {
+}
+.social-item-telegram {
 	background-color: #039BE5;
-	;
-  }
-  .social-item-link:not(:first-child) {
+}
+.social-item-link:not(:first-child) {
 	margin-left: 32px;
-  }
+}
