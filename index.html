@@ -30,11 +30,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Екологічні проблеми<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Екотуризм</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Екотуризм</a>
+                        <div class="dropdown-menu bg-transparent mt-1" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Зелений туризм в Україні</a>
+                            <a class="dropdown-item" href="#">Інклюзивний туризм</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Тварини в екології</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" d="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Тварини в екології</a>
+                        <div class="dropdown-menu bg-transparent mt-1" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Пташинні гнізда на лініях електропередачі</a>
+                            <a class="dropdown-item" href="#">Екологічне бджільництво</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Зворотній зв’язок</a>
@@ -58,8 +66,8 @@
             </div>
 
             <img src="img/leaves-left.png" class="position-absolute img-fluid leaves-left" alt="">
-            <div class="row justify-content-end main-block-content">
-                <div class="col-6">
+            <div class="row justify-content-end main-block-content row-cols-1 row-cols-sm-2">
+                <div class="col-md-6 col-sm-12">
                     <p class="main-content">Наш портал призначений для вирішення існуючих нагальних проблем будь-якої територіальної одиниці України. За допомогою інформаційного порталу EcoLife Community будь-який громадянин України може винести для обговорення та подальшого вирішення проблему, що стосується регіону, 
                         де він проживає. При цьому відповідна інформація буде передана в компетентні державні органи для обробки і надання допомоги у вирішенні проблеми.</p>
                     <p class="main-content">На інформаційному порталі EcoLife Community також акумулюється різні показники, що характеризують екологічну обстановку в конкретному регіоні України: показники забрудненості повітря, водних 
@@ -74,17 +82,42 @@
         <div class="dropdown-divider"></div>
         <div class="container-content">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <h4 class="footer-nav-title">EcoLife Community</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item"><a class="list-group-link" href="">Екотуризм</a></li>
-                        <li class="list-group-item"><a class="list-group-link" href="">Екологічні проблеми</a></li>
-                        <li class="list-group-item"><a class="list-group-link" href="">Тварини в екології</a></li>
-                        <li class="list-group-item"><a class="list-group-link" href="">Зворотній зв’язок</a></li>
+                    
+                    <ul class="navbar-nav list-group" id="navAccordion">    
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link list-group-link" href="#">Екологічні проблеми</a>
+                        </li>
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link nav-link-collapse list-group-link" href="#" id="hasSubItems" data-toggle="collapse" data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Екотуризм</a>
+                            <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link list-group-link" href="#">Зелений туризм в Україні</a>
+                                </li>
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link list-group-link" href="#">Інклюзивний туризм</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link nav-link-collapse list-group-link" href="#" id="hasSubItems" data-toggle="collapse" data-target="#collapseSubItems3" aria-controls="collapseSubItems3" aria-expanded="false">Тварини в екології</a>
+                            <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link list-group-link" href="#">Пташинні гнізда на лініях електропередачі</a>
+                                </li>
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link list-group-link" href="#">Екологічне бджільництво</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link list-group-link" href="#">Зворотній зв’язок</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-4">
+
+                <div class="col-6">
                     <form class="form-inline justify-content-end">
                         <input class="form-control mr-sm-4 bg-transparent" type="search" placeholder="Пошук" aria-label="Search">
                         <button class="btn btn-search" type="submit"><img src="img/icons/search.png" class="img-fluid" alt="..."></button>
