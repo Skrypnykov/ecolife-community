@@ -84,7 +84,6 @@ body {
 }
 .leaves-left {
 	left: 0;
-	-width: 30%;
 }
 .main-jumbotron {
 	margin-bottom: 110px;
@@ -115,9 +114,7 @@ body {
 }
 .btn-message {
 	margin-top: 100px;
-	width: 439px;
-	height: 97px;
-	padding: 31px 0;
+	padding: 31px 85px;
 	font-family: Raleway;
 	font-size: 27px;
 	line-height: 32px;
@@ -144,7 +141,18 @@ body {
 	color: #5F7C59;
 	margin-top: 71px;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+	.leaves-right {
+		max-width: 50%;
+	}
+	.leaves-left {
+		max-width: 50%;
+	}
+}
+@media (max-width: 768px) {
+	.jumbotron {
+		padding: 0;
+	}
 	.leaves-right {
 		display: none;
 	}
@@ -152,6 +160,19 @@ body {
 		display: none;
 	}
 }
+@media (max-width: 576px) {
+	.portal-title {
+		font-size: 56px;
+	}
+	.portal-type {
+		font-size: 32px;
+	}
+	.btn-message {
+		padding: 31px 85px;		
+		font-size: 1.2em;
+	}
+}
+
 /* news */
 .news-title {
 	text-align: center;
@@ -186,6 +207,7 @@ body {
 		margin-bottom: 2em;
 	}	
 }
+
 .news-card-text {
 	font-family: Raleway;
 	font-size: 25px;
