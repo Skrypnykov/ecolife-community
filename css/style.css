@@ -81,11 +81,14 @@ body {
 .leaves-right {
 	margin-top: 10px;
 	right: 0;
-	width: 45%;
+	-width: 45%;
 }
 .leaves-left {
 	left: 0;
-	width: 35%;
+	width: 30%;
+}
+.main-jumbotron {
+	margin-bottom: 110px;
 }
 .row {
 	margin-left: 0;
@@ -123,7 +126,7 @@ body {
 	background: #4B853E;
 }
 .main-block-content {
-	margin-top: 100px;
+	margin-top: 130px;
 }
 .main-content {
 	font-family: Raleway;
