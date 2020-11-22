@@ -305,3 +305,10 @@ body {
 .social-item-link:not(:first-child) {
 	margin-left: 32px;
 }
+@media (max-width: 576px) {
+	.social-wrapper {
+		margin-top: 120px;
+  	}
+	.social-item-link:not(:first-child) {
+		margin-left: 15px;	
+}
