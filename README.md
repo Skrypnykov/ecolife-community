@@ -1,1 +1,1 @@
-# ecolife-community
+# EcoLife Community
