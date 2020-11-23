@@ -116,6 +116,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 }
+.col-3,
 .col-12 {
 	padding-left: 0;
 	padding-right: 0;
@@ -282,6 +283,22 @@ body {
 	text-decoration: none;
 }
 
+/* section travel-search */
+
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+	padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 .footer {
 	margin-bottom: 40px;
@@ -380,4 +397,17 @@ body {
 	.footer {
 		margin-bottom: 10px;
 	}
+}
+
+.intro a:hover {
+	transition: .8s all;
+    -webkit-transition: .8s all;
+    -o-transition: .8s all;
+    -ms-transition: .8s all;
+    -moz-transition: .8s all;
+    transform: rotatey(360deg);
+    -webkit-transform: rotatey(360deg);
+    -moz-transform: rotatey(360deg);
+    -o-transform: rotatey(360deg);
+    -ms-transform: rotatey(360deg);
 }
