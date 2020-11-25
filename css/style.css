@@ -341,16 +341,17 @@ body {
     margin-bottom: 2rem;
     font-family: Raleway;
     font-weight: 600;
-    font-size: 30px;
+	font-size: calc(16px + 14 * (100vw / 1440));
     line-height: 35px;
     color: #5F7C59;
 }
 .green-card-content {
 	font-family: Raleway;
 	font-weight: 400;
-	font-size: 1.5vw;
-    -font-size: 22px;/*========================*/
-    line-height: 29px;
+	font-size: 1.6vw;
+	-font-size: 22px;/*========================*/
+	-font-size: calc(12px + 10 * (100vw / 1440));
+    line-height: 32px;
     color: #272727;
 	text-align: justify;
 	padding-bottom: 74px;
@@ -394,7 +395,7 @@ body {
 	padding-bottom: 80px;
 }
 .search-form-group {
-	width: 22%;
+	width: 23%;
 }
 .form-input-title {
 	font-family: Raleway;
@@ -411,12 +412,13 @@ body {
 	width: 50%;
 }
 .search-form-group:not(:last-child) {
-	margin-right: 49px;
+	margin-right: 18px;
 }
 .search-card-title {
 	font-family: Raleway;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: calc(15px + 14 * (100vw / 1440));
+	-font-size: 30px;
 	line-height: 35px;
 	color: #2D4D22;
 	margin-bottom: 25px;
@@ -446,7 +448,29 @@ body {
 }
 
 @media (max-width: 992px) {
-	
+	.breadcrumb {
+    	padding: 40px 0 40px;
+	}
+	.green-card-title {
+    	margin-bottom: 1rem;
+    	padding: 0 20px;
+	}
+	.green-card-content {
+    	padding: 0 20px 20px;
+	}
+	.search-form-group {
+		width: 47%;
+	}
+	.form-input-title {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	.form-btn-search {
+		margin: 50px 0;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 50px;
+	}
 }
 @media (max-width: 768px) {
 	.breadcrumb {
@@ -466,24 +490,27 @@ body {
 	.green-card-title {
     	margin-bottom: 1rem;
     	padding: 0 20px;
-    	font-size: 3vw;
 	}
 	.green-card-content {
-     	line-height: 25px;
+		font-size: 1.9vw;
+     	line-height: 22px;
     	padding: 0 20px 20px;
 	}
 	.green-card-text {
-	    font-size: 1.5vw;
-	    line-height: 22px;
+		font-size: 1.9vw;
+	    line-height: 20px;
 	}
 	.green-card-group {
     	margin-bottom: 40px;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 30px;
 	}
 	.travel-search {
     	margin-bottom: 50px;
 	}
 	.search-card-title {
-	    font-size: 2.5vw;
+		font-size: calc(15px + (14 + 14 * 0.7) * ((100vw- 320px) / 1440));
 	    line-height: 30px;
 	    
 	    margin-bottom: 25px;
@@ -492,6 +519,9 @@ body {
 	    font-size: 2.8vw;
 	    line-height: 35px;
 	    padding-bottom: 30px;
+	}
+	.search-form-row {
+		padding-bottom: 40px;
 	}
 	.form-btn-search {
 	    font-family: Raleway;
@@ -506,7 +536,33 @@ body {
 	}
 }
 @media (max-width: 576px) {
-	
+	.green-rectangle {
+		display: none;
+	}
+	.green-card-title {
+		-font-size: 3.2vw;
+		font-size: calc(15px + (14 + 14 * 0.7) * ((100vw- 320px) / 1440));
+    	margin-bottom: .5rem;
+    	padding: 0 20px;
+	}
+	.green-card-content {
+		font-size: 2vw;
+     	line-height: 18px;
+    	padding: 0 20px 20px;
+	}
+	.green-card-text {
+		font-size: 2.5vw;
+	    line-height: 20px;
+	}
+	.green-card-link {
+
+	}
+	.search-form-group:nth-child(even) {
+		margin-right: 10px;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 0;
+	}
 }
 
 /* end section green-tourism */
