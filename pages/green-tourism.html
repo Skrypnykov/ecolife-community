@@ -72,10 +72,11 @@
         
         <div class="main-card-first">
             <div class="row no-gutters">
-                <div class="col-12">
+                <div class="col-12 position-relative">
                     <div class="container-content">
-                        <div class="row no-gutters">
-                            <div class="col-6">
+                        
+                        <div class="row no-gutters" style="z-index: 100">
+                            <div class="col-6 ">
                                 <img src="../img/tourism/green-tourism.png" class="main-card-img" alt="...">
                             </div>
                             <div class="col-6">
@@ -85,40 +86,39 @@
                                         із року в рік. Не секрет, що погана екологічна обстановка в великих містах, необхідність вирішення повсякденних проблем в бізнесі 
                                         та побуті призводять до стресів і нервового напруження. З цієї причини все більше людей відмовляється від популярних курортів з пасивним проведенням часу на пляжі або біля басейну, 
                                         і вважає за краще відпочивати ближче до природи, щоб насолоджуватися свіжим повітрям, гуляти по лісу, збирати свіжі ягоди і гриби, пити воду 
-                                        з джерела і харчуватися натуральними продуктами.</p>
+                                        з джерела і харчуватися натуральними продуктами.</p>    
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- end row -->
                     </div> <!-- end container-content -->
-                    <div class="row no-gutters">
-                        <div class="col-12">
-
+                    <div class="row position-absolute w-100 fixed-bottom" style="z-index: -1">
+                        <div class="offset-4 col-8">
+                            <div class="green-rectangle"></div>
                         </div>
-                    </div>
+                    </div> <!-- end row -->
+
                 </div>
             </div>
         </div>
 
-
-        
         <div class="container-content">
             <div class="card-group green-card-group">
                 <div class="card bg-transparent border-0 second-green-card">
                     <img src="../img/tourism/g-img1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text green-card-text">Активний відпочинок в умовах не пошкодженої природи.</p>
+                        <p class="card-text green-card-text"><a href="#" class="stretched-link green-card-link">Активний відпочинок в умовах не пошкодженої природи.</a></p>
                     </div>
                 </div>
                 <div class="card bg-transparent border-0 second-green-card">
                     <img src="../img/tourism/g-img2.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text green-card-text">Проживання в наметі на березі річки або озера і відмова від цивілізації.</p>            
+                        <p class="card-text green-card-text"><a href="#" class="stretched-link green-card-link">Проживання в наметі на березі річки або озера і відмова від цивілізації.</a></p>            
                     </div>
                 </div>
                 <div class="card bg-transparent border-0 second-green-card">
                     <img src="../img/tourism/g-img3.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text green-card-text">Відпочинок в невеликому котеджі в селі з можливістю цивілізації.</p>
+                        <p class="card-text green-card-text"><a href="#" class="stretched-link green-card-link">Відпочинок в невеликому котеджі в селі з можливістю цивілізації.</a></p>
                     </div>
                 </div>
             </div>
@@ -137,56 +137,104 @@
                     </div>
 
                     <div class="travel-form-wrapper">
-                        <form class="travel-search-form">
-                            <div class="form-row search-form-row">
-                                <div class="form-group col-3">
-                                    <label class="form-input-title" for="exampleFormControlSelect1">Напрямок</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-3">
-                                    <label class="form-input-title" for="exampleFormControlSelect2">Звідки</label>
-                                    <select class="form-control" id="exampleFormControlSelect2">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
 
-                                
-                                <div class="form-group col-3 -mx-1">
-                                    <label class="form-input-title" for="dateFormControlInput1">Дата</label>
-                                    <div class="d-flex">
-                                        <input type="date" class="form-control" id="dateFormControlInput1" placeholder="з">
-                                        <input type="date" class="form-control" id="dateFormControlInput2" placeholder="до">
+                            <div class="container-content">
+                            <form class="travel-search-form">
+
+                                <div class="form-row search-form-row">
+                                    <div class="form-group search-form-group">
+                                        <label class="form-input-title" for="exampleFormControlSelect1">Напрямок</label>
+                                        <select class="form-control search-form-control" name="where-to" id="exampleFormControlSelect1">
+                                            <option value="26">м. Севастополь</option>
+                                            <option value="25">м. Сімферополь </option>
+                                            <option value="23" selected="selected">м. Чернівці</option>
+                                            <option value="22">м. Черкаси</option>
+                                            <option value="21">м. Хмельницький</option>
+                                            <option value="20">м. Херсон</option>
+                                            <option value="19">м. Харків</option>
+                                            <option value="18">м. Тернопіль</option>
+                                            <option value="17">м. Суми</option>
+                                            <option value="16">м. Рівне</option>
+                                            <option value="15">м. Полтава</option>
+                                            <option value="14">м. Одеса</option>
+                                            <option value="13">м. Миколаїв</option>
+                                            <option value="12">м. Львів</option>
+                                            <option value="11">м. Луганськ</option>
+                                            <option value="10">м. Кропивницький</option>
+                                            <option value="9">м. Івано-Франківськ</option>
+                                            <option value="8">м. Запоріжжя</option>
+                                            <option value="7">м. Ужгород</option>
+                                            <option value="6">м. Житомир</option>
+                                            <option value="5">м. Донецьк</option>
+                                            <option value="4">м. Дніпро</option>
+                                            <option value="3">м. Луцьк</option>
+                                            <option value="2">м. Вінниця</option>
+                                            <option value="1">м. Київ</option>
+                                        </select>
                                     </div>
-                                </div>
+                                    <div class="form-group search-form-group">
+                                        <label class="form-input-title" for="exampleFormControlSelect2">Звідки</label>
+                                        <select class="form-control search-form-control" name="from-where" id="exampleFormControlSelect2">
+                                            <option value="26">м. Севастополь</option>
+                                            <option value="25">м. Сімферополь </option>
+                                            <option value="23">м. Чернівці</option>
+                                            <option value="22">м. Черкаси</option>
+                                            <option value="21">м. Хмельницький</option>
+                                            <option value="20">м. Херсон</option>
+                                            <option value="19">м. Харків</option>
+                                            <option value="18">м. Тернопіль</option>
+                                            <option value="17">м. Суми</option>
+                                            <option value="16">м. Рівне</option>
+                                            <option value="15">м. Полтава</option>
+                                            <option value="14">м. Одеса</option>
+                                            <option value="13">м. Миколаїв</option>
+                                            <option value="12">м. Львів</option>
+                                            <option value="11">м. Луганськ</option>
+                                            <option value="10">м. Кропивницький</option>
+                                            <option value="9">м. Івано-Франківськ</option>
+                                            <option value="8">м. Запоріжжя</option>
+                                            <option value="7">м. Ужгород</option>
+                                            <option value="6">м. Житомир</option>
+                                            <option value="5">м. Донецьк</option>
+                                            <option value="4">м. Дніпро</option>
+                                            <option value="3">м. Луцьк</option>
+                                            <option value="2">м. Вінниця</option>
+                                            <option value="1" selected="selected">м. Київ</option>  
+                                        </select>
+                                    </div>
 
-                                <div class="form-group col-3">
-                                    <label class="form-input-title" for="exampleFormControlSelect4">Транспорт</label>
-                                    <select class="form-control" id="exampleFormControlSelect4">
-                                        <option>будь-який</option>
-                                        <option>автобус</option>
-                                        <option>автомобіль</option>
-                                        <option>водний</option>
-                                        <option>авіаційний</option>
-                                    </select>
+                                    
+                                    <div class="form-group search-form-group form-group-date">
+                                        <label class="form-input-title" for="dateFormControlInput1">Дата</label>
+                                        <div class="d-flex">
+                                            <input type="date" class="form-control form-control-date search-form-control" id="dateFormControlInput1" placeholder="з">
+                                            <input type="date" class="form-control form-control-date search-form-control" id="dateFormControlInput2" placeholder="до">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group search-form-group">
+                                        <label class="form-input-title" for="exampleFormControlSelect4">Транспорт</label>
+                                        <select class="form-control search-form-control" name="transport" id="exampleFormControlSelect4">
+                                            <option value="6" selected="selected">будь-який</option>
+                                            <option value="5">велосипед</option>
+                                            <option value="4">автобус</option>
+                                            <option value="3">автомобіль</option>
+                                            <option value="2">водний</option>
+                                            <option value="1">авіаційний</option>
+                                        </select>
+                                    </div>
+                                </div> <!-- end form-row -->
+                            </div> <!-- end conainer-content -->
+                            
+                                <div class="btn-search-wrapper">
+                                    <button type="submit" class="btn btn-success form-btn-search">Знайти</button>
                                 </div>
-                            </div>
-                            <div class="btn-search-wrapper">
-                                <button type="submit" class="btn btn-primary form-btn-search">Знайти</button>
-                            </div>
-                        </form> <!-- end form -->
-                    </div>
+                            
+                            </form> <!-- end form -->
+                    </div><!-- end travel-form-wrapper -->
+
                 </div> <!-- end card-body -->
-            </div>
+            </div> <!-- end card -->
     </section>
 
 
@@ -232,7 +280,7 @@
 
                 <div class="col-12 col-sm-6">
                     <form class="form-inline justify-content-end">
-                        <input class="form-control mr-sm-4 bg-transparent" type="search" placeholder="Пошук" aria-label="Search">
+                        <input class="form-control mr-sm-4 bg-transparent search-form-footer" type="search" placeholder="Пошук" aria-label="Search">
                         <button class="btn btn-search" type="submit"><img src="../img/icons/search.png" class="img-fluid" alt="..."></button>
                     </form>
                     <div class="social-wrapper">

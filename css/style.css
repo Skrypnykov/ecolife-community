@@ -14,16 +14,29 @@ body {
 	max-width: 1260px;
 	margin: 0 auto;
 }
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.offset-4,
+.col-3,
+.col-6,
+.col-8,
+.col-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.btn {
+	border: none;
+	padding: 0;
+}
 @media (max-width: 1260px) {
 	.container-content {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 }
-.btn {
-	border: none;
-	padding: 0;
-}
+/* end global */
 
 /* navbar */
 .navbar {
@@ -55,7 +68,6 @@ body {
 	font-size: 16px;
 	color: #000;
 }
-
 .dropdown-item:hover {
 	color: #6c757d;
     background-color: transparent;
@@ -108,8 +120,9 @@ body {
 		margin-top: 0;
 	}
 }
+/* end navbar */
 
-/* section main*/
+/* section index main*/
 .main {
 	margin-bottom: 100px;
 }
@@ -123,20 +136,9 @@ body {
 .main-jumbotron {
 	margin-bottom: 110px;
 }
-.row {
-	margin-left: 0;
-	margin-right: 0;
-}
-.col-3,
-.col-6,
-.col-12 {
-	padding-left: 0;
-	padding-right: 0;
-}
 .portal-title {
 	margin-top: 100px;
 	font-family: Raleway;
-	font-weight: normal;
 	font-size: 72px;
 	line-height: 85px;
 	color: #5F7C59;
@@ -162,7 +164,6 @@ body {
 }
 .main-content {
 	font-family: Raleway;
-	font-weight: normal;
 	font-size: 22px;
 	line-height: 29px;
 	color: #272727;
@@ -242,8 +243,9 @@ body {
 		margin-top: 50px;
 	}
 }
+/* end section index main */
 
-/* section news */
+/* section index news */
 .news-title {
 	text-align: center;
 	font-family: Raleway;
@@ -255,11 +257,6 @@ body {
 }
 .news-card-group {
 	margin-bottom: 100px;
-}
-@media (max-width: 768px) {
-	.news-card-group {
-		margin-bottom: 50px;
-	}
 }
 .news-card {
 	border: none;
@@ -275,12 +272,6 @@ body {
 .news-card:not(:last-child) {
 	margin-right: 44px;
 }
-@media (max-width: 576px) {
-	.news-card:not(:last-child) {
-		margin-right: 0;
-		margin-bottom: 2em;
-	}	
-}
 .news-card-text {
 	font-family: Raleway;
 	font-size: 25px;
@@ -294,11 +285,22 @@ body {
 	color: rgba(0,0,0,.8);
 	text-decoration: none;
 }
-
+@media (max-width: 768px) {
+	.news-card-group {
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 576px) {
+	.news-card:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 2em;
+	}	
+}
+/* end section index news */
 
 /* section green-tourism */
 .breadcrumb {
-	padding: 80px 0 35px;
+	padding: 80px 0 60px;
 	margin-bottom: 0;
 }
 .breadcrumb-item {
@@ -325,19 +327,18 @@ body {
     color: #6c757d;
     content: ">";
 }
-
 .main-card-first {
 	margin-bottom: 90px;
 }
 .main-card-img {
 	max-width: 561px;
+	width: 100%;	
 }
-
 .green-card-group {
 	margin-bottom: 100px;
 }
 .green-card-title {
-    margin-bottom: 70px;
+    margin-bottom: 2rem;
     font-family: Raleway;
     font-weight: 600;
     font-size: 30px;
@@ -347,7 +348,8 @@ body {
 .green-card-content {
 	font-family: Raleway;
 	font-weight: 400;
-    font-size: 22px;
+	font-size: 1.5vw;
+    -font-size: 22px;/*========================*/
     line-height: 29px;
     color: #272727;
 	text-align: justify;
@@ -364,26 +366,19 @@ body {
 .second-green-card:not(:last-child) {
 	margin-right: 100px;
 }
-/*
+.green-card-link {
+	color: #000;
+}
+.green-card-link:hover {
+	color: rgba(0,0,0,.8);
+	text-decoration: none;
+}
 .green-rectangle {
 	background-color: #2D4D22;
-	-width: 100%;
-	height: 108px;
-	margin-left: 20%;
-	margin-bottom: 90px;
+	height: 7vw;
 }
-.main-card-img::before {
-	content: '';
-	position: absolute;
-	width: 935px;
-	height: 108px;
-	display: block;
-	height: 1px;
-	background: green;
-}
-*/
 
-/* section travel-search */
+/* travel-search */
 .travel-search {
 	margin-bottom: 100px;
 }
@@ -397,6 +392,26 @@ body {
 .search-form-row {
 	margin: 0;
 	padding-bottom: 80px;
+}
+.search-form-group {
+	width: 22%;
+}
+.form-input-title {
+	font-family: Raleway;
+	font-size: 25px;
+	line-height: 29px;
+	color: #FFFFFF;
+	margin-top: 80px;
+	margin-bottom: 35px;
+}
+.search-form-control {
+	padding: 0 0 0 .4em;
+}
+.form-control-date {
+	width: 50%;
+}
+.search-form-group:not(:last-child) {
+	margin-right: 49px;
 }
 .search-card-title {
 	font-family: Raleway;
@@ -414,15 +429,6 @@ body {
 	color: #2D4D22;
 	padding-bottom: 50px;
 }
-.form-input-title {
-	font-family: Raleway;
-	font-size: 25px;
-	line-height: 29px;
-	color: #FFFFFF;
-	margin-top: 80px;
-	margin-bottom: 35px;
-}
-
 .btn-search-wrapper {
 	text-align: center;
 	background-image: url(../img/bg-search.png);
@@ -439,16 +445,71 @@ body {
 	margin: 85px 0;
 }
 
-
-input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
-	padding-right: 0;
+@media (max-width: 992px) {
+	
+}
+@media (max-width: 768px) {
+	.breadcrumb {
+    	padding: 40px 0 40px;
+	}
+	.breadcrumb-item {
+	    font-size: 2vw;
+	    line-height: 21.13px;
+	    padding-right: .6rem;
+  	}
+  	.breadcrumb-item.active {
+	    font-size: 2vw;
+	}
+	.main-card-first {
+    	margin-bottom: 50px;
+	}
+	.green-card-title {
+    	margin-bottom: 1rem;
+    	padding: 0 20px;
+    	font-size: 3vw;
+	}
+	.green-card-content {
+     	line-height: 25px;
+    	padding: 0 20px 20px;
+	}
+	.green-card-text {
+	    font-size: 1.5vw;
+	    line-height: 22px;
+	}
+	.green-card-group {
+    	margin-bottom: 40px;
+	}
+	.travel-search {
+    	margin-bottom: 50px;
+	}
+	.search-card-title {
+	    font-size: 2.5vw;
+	    line-height: 30px;
+	    
+	    margin-bottom: 25px;
+	}
+	.search-card-subtitle {
+	    font-size: 2.8vw;
+	    line-height: 35px;
+	    padding-bottom: 30px;
+	}
+	.form-btn-search {
+	    font-family: Raleway;
+	    font-size: 2.5vw;
+	    line-height: 33px;
+	    color: #272727;
+	    background: #FFFFFF;
+	    border: 1px solid #000000;
+	    border-radius: 0;
+	    padding: 8px 60px;
+	    margin: 65px 0;
+	}
+}
+@media (max-width: 576px) {
+	
 }
 
 /* end section green-tourism */
-
-
-
-
 
 
 
@@ -497,7 +558,6 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
 	border-top: 0;
 	border-right: 0;
 	border-left: 0;
-	padding-left: 0;
 	padding-bottom: 0;
 }
 .form-control:focus {
@@ -513,6 +573,9 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
 	font-size: 14px;
 	line-height: 16.44px;
 	color: #525252;
+}
+.search-form-footer {
+	padding-left: 0;
 }
 .social-wrapper {
   	margin-top: 150px;
@@ -538,6 +601,7 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
 .social-item-link:not(:first-child) {
 	margin-left: 24px;
 }
+
 @media (max-width: 576px) {
 	.social-wrapper {
 		margin-top: 80px;
@@ -564,4 +628,17 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
     -moz-transform: rotatey(360deg);
     -o-transform: rotatey(360deg);
     -ms-transform: rotatey(360deg);
+}
+
+/* end footer */
+
+
+@media (max-width: 992px) {
+	
+}
+@media (max-width: 768px) {
+	
+}
+@media (max-width: 576px) {
+	
 }
