@@ -10,6 +10,9 @@
 body {
 	background: #F7FFF9;
 }
+html { 
+	font-size: 100% 
+}
 .container-content {
 	max-width: 1260px;
 	margin: 0 auto;
@@ -32,8 +35,8 @@ body {
 }
 @media (max-width: 1260px) {
 	.container-content {
-		margin-left: 15px;
-		margin-right: 15px;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 }
 /* end global */
@@ -43,18 +46,18 @@ body {
 	padding: 0;
 }
 .navbar-light .navbar-nav {
-	margin-top: 80px;
-	margin-bottom: 8px;
+	margin-top: 5rem;
+	margin-bottom: .5rem;
 }
 .navbar-light .navbar-nav .nav-item:not(:last-child) {
-	margin-right: 80px;
+	margin-right: 5rem;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #272727;
 	padding: 0;
 	font-family: Raleway;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .dropdown-menu {
 	border-radius: 0;
@@ -65,7 +68,7 @@ body {
 	padding: .25rem 1rem;
 	font-family: Raleway;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1em;
 	color: #000;
 }
 .dropdown-item:hover {
@@ -92,14 +95,14 @@ body {
 
 @media (max-width: 992px) {
 	.navbar {
-		padding: 20px 20px 10px;
+		padding: 1.25rem 1.25rem .625rem;
 	}
 	.navbar-light .navbar-nav {
-		margin-top: 10px;
+		margin-top: .625rem;
 		margin-bottom: 0;
 	}
 	.navbar-light .navbar-nav .nav-link {
-		margin: 16px;
+		margin: 1rem;
 	}
 	.navbar-light .navbar-nav .nav-item:not(:last-child) {
 		margin-right: 0;
@@ -108,12 +111,12 @@ body {
 		border-bottom: none;
 	}
 	.navbar-collapse .form-inline {
-		margin-top: 15px;
-		margin-left: 15px;
+		margin-top: .95rem;
+		margin-left: .95rem;
 	}
 	.dropdown-menu {
 		border: none;
-		margin-left: 20px;
+		margin-left: 1.25rem;
 		padding: 0;
 	}
 	.btn {
@@ -124,89 +127,92 @@ body {
 
 /* section index main*/
 .main {
-	margin-bottom: 100px;
+	margin-bottom: 6.25rem;
 }
 .leaves-right {
-	margin-top: 10px;
+	margin-top: .625rem;
 	right: 0;
 }
 .leaves-left {
 	left: 0;
 }
 .main-jumbotron {
-	margin-bottom: 110px;
+	margin-bottom: 6.8rem;
 }
 .portal-title {
-	margin-top: 100px;
+	margin-top: 6.25rem;
 	font-family: Raleway;
-	font-size: 72px;
-	line-height: 85px;
+	font-size: 4.75em;
+	line-height: 5.3rem;
 	color: #5F7C59;
 }
 .portal-type {
-	margin-top: 32px;
+	margin-top: 2rem;
 	font-family: "Poiret One";
-	font-size: 45px;
+	font-size: 2.75em;
 	line-height: 53px;
 	color: #272727;
 }
 .btn-message {
-	margin-top: 100px;
-	padding: 31px 85px;
+	margin-top: 6.25rem;
+	padding: 1.85rem 5.3rem;
 	font-family: Raleway;
-	font-size: 27px;
-	line-height: 32px;
+	font-size: 1.65rem;
+	line-height: 2rem;
 	color: #F5F5F5;
 	background: #4B853E;
 }
 .main-block-content {
-	margin-top: 130px;
+	margin-top: 8rem;
 }
 .main-content {
 	font-family: Raleway;
-	font-size: 22px;
-	line-height: 29px;
+	font-weight: 300;
+	font-size: 1.5em;
 	color: #272727;
-	margin-top: 35px;
+	margin-top: 2.2em;
 	text-align: justify;
 }
 .main-slogan {
 	font-family: Raleway;
 	font-weight: 600;
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 1.8em;
+	line-height: 2rem;
 	color: #5F7C59;
-	margin-top: 71px;
+	margin-top: 4.35rem;
 }
 @media (max-width: 992px) {
 	.main {
-    	margin-bottom: 50px;
+    	margin-bottom: 3rem;
 	}
 	.leaves-right {
 		max-width: 45%;
 	}
 	.leaves-left {
-		margin-top: 88px;
+		margin-top: 5.55rem;
 		max-width: 42%;
 	}
 	.portal-title {
-		margin-top: 30px;
+		margin-top: 1.8rem;
 		font-size: 3.3em;
 	}
 	.portal-type {
 		margin-top: 0;
 		font-size: 2.5em;
 	}
-	.btn-message {
-		padding: 16px 48px;		
+	.main-content {
 		font-size: 1.25em;
-		margin-top: 70px;
+	}
+	.btn-message {
+		padding: 1rem 3rem;		
+		font-size: 1.25em;
+		margin-top: 4.35rem;
 	}
 	.main-jumbotron {
-    	margin-bottom: 50px;
+    	margin-bottom: 3rem;
 	}
 	.main-block-content {
-    	margin-top: 50px;
+    	margin-top: 3rem;
 	}
 }
 @media (max-width: 768px) {
@@ -221,7 +227,7 @@ body {
 		display: none;
 	}
 	.portal-title {
-		margin-top: 80px;
+		margin-top: 3rem;
 		margin-bottom: 0;
     	font-size: 3em;
 	}
@@ -229,10 +235,17 @@ body {
 		margin-top: 0;
 		font-size: 2.2em;
 	}
+	.main-content {
+		font-size: 1.1em;
+	}
+	.main-slogan {
+		margin-top: 2.35rem;
+		text-align: center;
+	}
 	.btn-message {
-		padding: 16px 48px;		
+		padding: 1rem 3rem;		
 		font-size: 1.25em;
-		margin-top: 70px;
+		margin-top: 4.35rem;
 	}
 }
 @media (max-width: 576px) {
@@ -240,7 +253,10 @@ body {
 		display: none;
 	}
 	.btn-message {
-		margin-top: 50px;
+		margin-top: 3rem;
+	}
+	.main-content {
+		line-height: 1.3em;
 	}
 }
 /* end section index main */
@@ -250,13 +266,13 @@ body {
 	text-align: center;
 	font-family: Raleway;
 	font-weight: 600;
-	font-size: 30px;
-	line-height: 35px;
+	font-size: 2em;
+	line-height: 2.2rem;
 	color: #5F7C59;
-	margin-bottom: 35px;
+	margin-bottom: 2.2rem;
 }
 .news-card-group {
-	margin-bottom: 100px;
+	margin-bottom: 6.25rem;
 }
 .news-card {
 	border: none;
@@ -270,12 +286,12 @@ body {
 	padding: 1rem;
 }
 .news-card:not(:last-child) {
-	margin-right: 44px;
+	margin-right: 2.55rem;
 }
 .news-card-text {
 	font-family: Raleway;
-	font-size: 25px;
-	line-height: 29px;
+	font-size: 1.5em;
+	line-height: 1.8rem;
 	color: #000;
 }
 .news-card-link {
@@ -285,12 +301,29 @@ body {
 	color: rgba(0,0,0,.8);
 	text-decoration: none;
 }
+
+@media (max-width: 992px) {
+	.news-card-text {
+		font-size: 1.2em;
+		line-height: 1.5rem;
+	}
+}
 @media (max-width: 768px) {
 	.news-card-group {
-		margin-bottom: 50px;
+		margin-bottom: 3rem;
+	}
+	.news-card-text {
+		font-size: 1.3em;
+		line-height: 1.8rem;
 	}
 }
 @media (max-width: 576px) {
+	.news {
+		margin: 0 1.2rem;
+	}
+	.news-card {
+		margin-top: 1rem;
+	}
 	.news-card:not(:last-child) {
 		margin-right: 0;
 		margin-bottom: 2em;
@@ -300,20 +333,20 @@ body {
 
 /* section green-tourism */
 .breadcrumb {
-	padding: 80px 0 60px;
+	padding: 5rem 0 3.75rem;
 	margin-bottom: 0;
 }
 .breadcrumb-item {
 	font-family: Raleway;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 21.13px;
+	font-size: 1.25em;
+	line-height: 1.3rem;
 	padding-right: .8rem;	
 }
 .breadcrumb-item.active {
 	font-family: Raleway;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 1.25em;
 }
 .breadcrumb-link {
 	color: #000;
@@ -328,44 +361,40 @@ body {
     content: ">";
 }
 .main-card-first {
-	margin-bottom: 90px;
+	margin-bottom: 5.5rem;
 }
 .main-card-img {
 	max-width: 561px;
 	width: 100%;	
 }
 .green-card-group {
-	margin-bottom: 100px;
+	margin-bottom: 6.25rem;
 }
 .green-card-title {
     margin-bottom: 2rem;
     font-family: Raleway;
     font-weight: 600;
-	font-size: calc(16px + 14 * (100vw / 1440));
-    line-height: 35px;
+	font-size: 1.95em;
+    line-height: 3rem;
     color: #5F7C59;
 }
 .green-card-content {
 	font-family: Raleway;
 	font-weight: 400;
-	font-size: 1.6vw;
-	-font-size: 22px;/*========================*/
-	-font-size: calc(12px + 10 * (100vw / 1440));
-    line-height: 32px;
+	font-size: 1.4em;
     color: #272727;
 	text-align: justify;
-	padding-bottom: 74px;
 }
 .green-card-text {
 	font-family: Raleway;
 	font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 1.4em;
+    line-height: 1.8rem;
     color: #272727;
 	text-align: center;
 }
 .second-green-card:not(:last-child) {
-	margin-right: 100px;
+	margin-right: 6.25rem;
 }
 .green-card-link {
 	color: #000;
@@ -381,7 +410,7 @@ body {
 
 /* travel-search */
 .travel-search {
-	margin-bottom: 100px;
+	margin-bottom: 6.25rem;
 }
 .travel-form-wrapper {
 	width: 100%;
@@ -392,18 +421,18 @@ body {
 }
 .search-form-row {
 	margin: 0;
-	padding-bottom: 80px;
+	padding-bottom: 5rem;
 }
 .search-form-group {
 	width: 23%;
 }
 .form-input-title {
 	font-family: Raleway;
-	font-size: 25px;
-	line-height: 29px;
+	font-size: 1.25em;
+	line-height: 1.8rem;
 	color: #FFFFFF;
-	margin-top: 80px;
-	margin-bottom: 35px;
+	margin-top: 5rem;
+	margin-bottom: 2.2rem;
 }
 .search-form-control {
 	padding: 0 0 0 .4em;
@@ -412,24 +441,23 @@ body {
 	width: 50%;
 }
 .search-form-group:not(:last-child) {
-	margin-right: 18px;
+	margin-right: 1.125rem;
 }
 .search-card-title {
 	font-family: Raleway;
 	font-weight: 500;
-	font-size: calc(15px + 14 * (100vw / 1440));
-	-font-size: 30px;
-	line-height: 35px;
+	font-size: 2em;
+	line-height: 2.2rem;
 	color: #2D4D22;
-	margin-bottom: 25px;
+	margin-bottom: 1.55rem;
 }
 .search-card-subtitle {
 	font-family: Raleway;
 	font-weight: 500;
-	font-size: 28px;
-	line-height: 35px;
+	font-size: 1.65em;
+	line-height: 2.2rem;
 	color: #2D4D22;
-	padding-bottom: 50px;
+	padding-bottom: 3rem;
 }
 .btn-search-wrapper {
 	text-align: center;
@@ -437,59 +465,58 @@ body {
 }
 .form-btn-search {
 	font-family: Raleway;
-	font-size: 28px;
-	line-height: 33px;
+	font-size: 1.75em;
+	line-height: 2.1rem;
 	color: #272727;
 	background: #FFFFFF;
 	border: 1px solid #000000;
 	border-radius: 0;
-	padding: 15px 100px;
-	margin: 85px 0;
+	padding: .95rem 6.25rem;
+	margin: 5.3rem 0;
 }
 
 @media (max-width: 992px) {
 	.breadcrumb {
-    	padding: 40px 0 40px;
+    	padding: 2.45rem 0 2.45rem;
 	}
 	.green-card-title {
     	margin-bottom: 1rem;
-    	padding: 0 20px;
+    	padding: 0 1.25rem;
 	}
 	.green-card-content {
-    	padding: 0 20px 20px;
+    	padding: 0 1.25rem 1.25rem;
 	}
 	.search-form-group {
 		width: 47%;
 	}
 	.form-input-title {
-		margin-top: 40px;
-		margin-bottom: 20px;
+		margin-top: 2.45rem;
+		margin-bottom: 1.25rem;
 	}
 	.form-btn-search {
-		margin: 50px 0;
+		margin: 3rem 0;
 	}
 	.second-green-card:not(:last-child) {
-		margin-right: 50px;
+		margin-right: 3rem;
 	}
 }
 @media (max-width: 768px) {
 	.breadcrumb {
-    	padding: 40px 0 40px;
+    	padding: 2.45rem 0 2.45rem;
 	}
 	.breadcrumb-item {
-	    font-size: 2vw;
-	    line-height: 21.13px;
+	    line-height: 1.3rem;
 	    padding-right: .6rem;
   	}
   	.breadcrumb-item.active {
-	    font-size: 2vw;
+	    -font-size: 2vw; /*===============================*/
 	}
 	.main-card-first {
-    	margin-bottom: 50px;
+    	margin-bottom: 3rem;
 	}
 	.green-card-title {
     	margin-bottom: 1rem;
-    	padding: 0 20px;
+    	padding: 0 1.25rem;
 	}
 	.green-card-content {
 		font-size: 1.9vw;
@@ -671,6 +698,8 @@ body {
 	.footer {
 		margin-bottom: 10px;
 	}
+}@media (max-width: 992px) {
+	
 }
 
 .intro a:hover {
