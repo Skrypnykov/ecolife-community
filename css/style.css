@@ -23,6 +23,7 @@ html {
 }
 .offset-4,
 .col-3,
+.col-4,
 .col-6,
 .col-8,
 .col-12 {
@@ -359,7 +360,7 @@ html {
 .main-card-first {
 	margin-bottom: 5.5rem;
 }
-.main-card-img {
+.left-card-img {
 	max-width: 561px;
 	width: 100%;	
 }
@@ -612,6 +613,28 @@ html {
 }
 
 /* end section green-tourism */
+
+/* section inclusive-tourism */
+
+.right-img-card {
+	max-width: 630px;
+	width: 100%;
+}
+.inclusive-card-body {
+	margin-right: 4.5rem;
+}
+.second-inclusive-card {
+	padding: 1em;
+}
+.second-inclusive-card:not(:nth-child(3n)) {
+	-margin-right: 1em;
+}
+
+
+
+
+
+
 
 
 
