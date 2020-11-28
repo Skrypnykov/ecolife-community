@@ -21,7 +21,6 @@ html {
 	margin-left: 0;
 	margin-right: 0;
 }
-.offset-4,
 .col-3,
 .col-4,
 .col-6,
@@ -93,7 +92,6 @@ html {
 	margin: 0;
 	border: 1px solid #4B853E;
 }
-
 @media (max-width: 992px) {
 	.navbar {
 		padding: 1.25rem 1.25rem .625rem;
@@ -124,7 +122,67 @@ html {
 		margin-top: 0;
 	}
 }
+@media (max-width: 768px) {
+	.navbar-light .navbar-nav .nav-link {
+		margin: .5rem 1rem;
+		font-size: 1em;
+	}
+}
 /* end navbar */
+
+/* breadcrumb */
+.breadcrumb {
+	padding: 5rem 0 3.75rem;
+	margin-bottom: 0;
+}
+.breadcrumb-item {
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 1.25em;
+	line-height: 1.3rem;
+	padding-right: .8rem;	
+}
+.breadcrumb-item.active {
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 1.25em;
+}
+.breadcrumb-link {
+	color: #000;
+}
+.breadcrumb-link:hover {
+	text-decoration: none;
+	color: #6c757d;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 1rem;
+    color: #6c757d;
+    content: ">";
+}
+@media (max-width: 992px) {
+	.breadcrumb {
+    	padding: 2.45rem 0 2.45rem;
+	}
+}
+@media (max-width: 768px) {
+	.breadcrumb {
+    	padding: 2.45rem 0 2.45rem;
+	}
+	.breadcrumb-item {
+		font-size: 1em;
+	    line-height: 1.3rem;
+	    padding-right: .6rem;
+  	}
+	.breadcrumb-item.active {
+    	font-size: 1em;
+	}
+}
+@media (max-width: 576px) {
+	.breadcrumb {
+		padding: 2.45rem 0 1.8rem;
+	}
+}
+/* end breadcrumb ===================== */
 
 /* section index main*/
 .main {
@@ -302,7 +360,6 @@ html {
 	color: rgba(0,0,0,.8);
 	text-decoration: none;
 }
-
 @media (max-width: 992px) {
 	.news-card-text {
 		font-size: 1.2em;
@@ -329,40 +386,12 @@ html {
 /* end section index news */
 
 /* section green-tourism */
-.breadcrumb {
-	padding: 5rem 0 3.75rem;
-	margin-bottom: 0;
-}
-.breadcrumb-item {
-	font-family: Raleway;
-	font-weight: 400;
-	font-size: 1.25em;
-	line-height: 1.3rem;
-	padding-right: .8rem;	
-}
-.breadcrumb-item.active {
-	font-family: Raleway;
-	font-weight: 400;
-	font-size: 1.25em;
-}
-.breadcrumb-link {
-	color: #000;
-}
-.breadcrumb-link:hover {
-	text-decoration: none;
-	color: #6c757d;
-}
-.breadcrumb-item+.breadcrumb-item::before {
-    padding-right: 1rem;
-    color: #6c757d;
-    content: ">";
-}
 .main-card-first {
 	margin-bottom: 5.5rem;
 }
-.left-card-img {
+.left-img-card {
 	max-width: 561px;
-	width: 100%;	
+	width: 100%;;
 }
 .second-green-card-group {
 	margin-bottom: 6.25rem;
@@ -386,7 +415,7 @@ html {
 	font-family: Raleway;
 	font-weight: 400;
     font-size: 1.4em;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     color: #272727;
 	text-align: center;
 }
@@ -404,6 +433,78 @@ html {
 	background-color: #2D4D22;
 	height: 7vw;
 }
+@media (max-width: 992px) {
+	.green-card-title {
+    	margin-bottom: 1rem;
+    	padding: 0 1.25rem;
+	}
+	.green-card-content {
+		font-size: 1.125em;
+    	padding: 0 1.25rem 1.25rem;
+	}
+	.green-card-text {
+		font-size: 1.2em;
+	}
+	.second-green-card-group {
+		margin-bottom: 4rem;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 3rem;
+	}
+}
+@media (max-width: 768px) {
+	.main-card-first {
+    	margin-bottom: 3rem;
+	}
+	.green-card-title {
+		font-size: 1.5em;
+    	margin-bottom: 1rem;
+    	padding: 0 1.25rem;
+	}
+	.green-card-content {
+		font-size: .9em;
+     	line-height: 1.3rem;
+    	padding: 0 1.25rem 1.25rem;
+	}
+	.green-card-text {
+		font-size: 1em;
+	    line-height: 1.25rem;
+	}
+	.second-green-card-group {
+    	margin-bottom: 2.45rem;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 1.8rem;
+	}
+}
+@media (max-width: 576px) {
+	.main-card-first {
+		margin: 0 3rem 1.5rem;
+	}
+	.green-rectangle {
+		display: none;
+	}
+	.green-card-title {
+    	margin: 1rem 0 0;
+    	padding: 0;
+	}
+	.green-card-content {
+		font-size: .9em;
+     	line-height: 1.125rem;
+    	padding: 0;
+	}
+	.second-green-card-group {
+		margin: 0 3rem 2.45rem;
+	}
+	.second-card-body {
+		padding: 1.25rem 0;
+	}
+	.second-green-card:not(:last-child) {
+		margin-right: 0;
+	}
+}
+/* end section green-tourism */
+
 
 /* travel-search */
 .travel-search {
@@ -442,8 +543,8 @@ html {
 }
 .search-card-title {
 	font-family: Raleway;
-	font-weight: 500;
-	font-size: 2em;
+	font-weight: 400;
+	font-size: 1.9em;
 	line-height: 2.2rem;
 	color: #2D4D22;
 	margin-bottom: 1.55rem;
@@ -454,7 +555,7 @@ html {
 	font-size: 1.65em;
 	line-height: 2.2rem;
 	color: #2D4D22;
-	padding-bottom: 3rem;
+	margin-bottom: 1.5rem;
 }
 .btn-search-wrapper {
 	text-align: center;
@@ -471,25 +572,7 @@ html {
 	padding: .95rem 6.25rem;
 	margin: 5.3rem 0;
 }
-
 @media (max-width: 992px) {
-	.breadcrumb {
-    	padding: 2.45rem 0 2.45rem;
-	}
-	.green-card-title {
-    	margin-bottom: 1rem;
-    	padding: 0 1.25rem;
-	}
-	.green-card-content {
-		font-size: 1.2em;
-    	padding: 0 1.25rem 1.25rem;
-	}
-	.green-card-text {
-		font-size: 1.2em;
-	}
-	.second-green-card-group {
-		margin-bottom: 4rem;
-	}
 	.search-form-group {
 		width: 47%;
 	}
@@ -503,49 +586,8 @@ html {
 	.search-card-title {
 		font-size: 1.5em;
 	}
-	.second-green-card:not(:last-child) {
-		margin-right: 3rem;
-	}
 }
 @media (max-width: 768px) {
-	.navbar-light .navbar-nav .nav-link {
-		margin: .5rem 1rem;
-		font-size: 1em;
-	}
-	.breadcrumb {
-    	padding: 2.45rem 0 2.45rem;
-	}
-	.breadcrumb-item {
-		font-size: 1em;
-	    line-height: 1.3rem;
-	    padding-right: .6rem;
-  	}
-	.breadcrumb-item.active {
-    	font-size: 1em;
-	}
-	.main-card-first {
-    	margin-bottom: 3rem;
-	}
-	.green-card-title {
-		font-size: 1.5em;
-    	margin-bottom: 1rem;
-    	padding: 0 1.25rem;
-	}
-	.green-card-content {
-		font-size: .9em;
-     	line-height: 1.3rem;
-    	padding: 0 1.25rem 1.25rem;
-	}
-	.green-card-text {
-		font-size: 1em;
-	    line-height: 1.25rem;
-	}
-	.second-green-card-group {
-    	margin-bottom: 2.45rem;
-	}
-	.second-green-card:not(:last-child) {
-		margin-right: 1.8rem;
-	}
 	.travel-search {
     	margin-bottom: 3rem;
 	}
@@ -555,9 +597,8 @@ html {
 	    margin-bottom: 1.5rem;
 	}
 	.search-card-subtitle {
-		font-size: 1.5em;
-	    line-height: 2.2rem;
-	    padding-bottom: 1.8rem;
+		font-size: 1.4em;
+	    line-height: 1.9rem;
 	}
 	.search-form-row {
 		padding-bottom: 2.45rem;
@@ -577,64 +618,116 @@ html {
 	}
 }
 @media (max-width: 576px) {
-	.breadcrumb {
-		padding: 2.45rem 0 1.8rem;
-	}
-	.green-rectangle {
-		display: none;
-	}
-	.green-card-title {
-    	margin: 1rem 0 0;
-    	padding: 0;
-	}
-	.green-card-content {
-		font-size: .9em;
-     	line-height: 1.125rem;
-    	padding: 0;
-	}
-	.main-card-first {
-		margin: 0 3rem 1.5rem;
-	}
-	.second-green-card-group {
-		margin: 0 3rem 2.45rem;
-	}
-	.second-card-body {
-		padding: 1.25rem 0;
-	}
 	.search-card-title {
 		padding: 0 1.5rem;
 	}
 	.search-form-group:nth-child(even) {
 		margin-right: .625rem;
 	}
-	.second-green-card:not(:last-child) {
-		margin-right: 0;
-	}
 }
-
-/* end section green-tourism */
+/* end travel-search */
 
 /* section inclusive-tourism */
-
 .right-img-card {
 	max-width: 630px;
 	width: 100%;
 }
+.inclusive-card-title {
+	margin-bottom: 2rem;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.95em;
+    line-height: 3rem;
+    color: #5F7C59;
+}
+.inclusive-card-content {
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 1.4em;
+    color: #272727;
+	text-align: justify;
+}
 .inclusive-card-body {
 	margin-right: 4.5rem;
 }
-.second-inclusive-card {
-	padding: 1em;
+.inclusive-group-title {
+	font-family: Raleway;
+	font-size: 1.8em;
+	line-height: 2.1rem;
+	margin-bottom: 3rem;
 }
-.second-inclusive-card:not(:nth-child(3n)) {
-	-margin-right: 1em;
+.inclusive-card-group {
+	margin-bottom: 5rem;
+}
+.inclusive-card-text {
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 1.4em;
+	line-height: 1.6rem;
+    color: #272727;
+	text-align: justify;
+}
+.inclusive-card-link {
+	color: #000;
+}
+.inclusive-card-link:hover {
+	color: rgba(0,0,0,.8);
+	text-decoration: none;
+}
+/*
+.inclusive-card:not(:nth-child(3n)) {
+	padding-right: 1rem;
+}
+*/
+@media (max-width: 992px) {
+	.inclusive-card-title {
+		margin-bottom: 1rem;
+	}
+	.inclusive-card-body {
+		margin-right: 2rem;
+	}
+	.inclusive-card-content {
+		font-size: 1.125em;
+	}
+	.inclusive-group-title {
+		font-size: 1.65em;
+	}
+	.inclusive-card-text {
+		font-size: 1.2em;
+	}	
+}
+@media (max-width: 768px) {
+	.inclusive-card-title {
+		font-size: 1.5em;
+		margin-bottom: 0;
+	}
+	.inclusive-card-body {
+		margin-right: 1.5rem;
+	}
+	.inclusive-card-content {
+		font-size: .9em;
+    	line-height: 1.3rem;
+	}
+	.inclusive-card-group {
+		margin-bottom: 1rem;
+	}
+	.inclusive-group-title {
+		font-size: 1.5em;
+		margin-bottom: 2rem;
+	}
+	.inclusive-card-text {
+		font-size: 1em;
+		line-height: 1.25rem;
+	}	
+}
+@media (max-width: 576px) {
+	.inclusive-card-group {
+		margin: 0 3rem 2.45rem;
+	}
 }
 
 
-
-
-
-
+/* end section inclusive-tourism */
 
 
 
