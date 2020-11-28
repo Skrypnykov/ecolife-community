@@ -573,6 +573,9 @@ html {
 	margin: 5.3rem 0;
 }
 @media (max-width: 992px) {
+	.travel-search {
+		margin-bottom: 5rem;
+	}
 	.search-form-group {
 		width: 47%;
 	}
@@ -726,9 +729,7 @@ html {
 	}
 }
 
-
 /* end section inclusive-tourism */
-
 
 
 
