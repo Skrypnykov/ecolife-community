@@ -561,6 +561,9 @@ html {
 	text-align: center;
 	background-image: url(../img/bg-search.png);
 }
+.btn-search-bg {
+	background: rgba(51, 79, 41, 0.54);
+}
 .form-btn-search {
 	font-family: Raleway;
 	font-size: 1.75em;
@@ -841,7 +844,6 @@ html {
 	text-decoration: none;
 	color: #6c757d;
 } 
-
 .ecopatrol-card {
 	margin-bottom: 5.5rem;
 }
