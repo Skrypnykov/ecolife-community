@@ -928,6 +928,35 @@ html {
 /* end ecopatrol */
 
 /* beekeeping */
+.beekeeping-title {
+	font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.95em;
+    line-height: 3rem;
+	color: #5F7C59;
+	margin-bottom: 2rem;
+}
+.beekeeping-card-right {
+	margin-bottom: 6.25rem;
+	height: 100%;
+	-padding: 1em;
+}
+
+.corn-rectangle {
+	background: #FBF7D3;
+	padding: 1rem;
+}
+.bee-card-right {
+	padding: .5rem 2rem;
+}
+.bee-card-content {
+	font-family: Raleway;
+	font-size: 1.4em;	
+	color: #272727;
+	margin-bottom: 2.45rem;
+}
+
+
 /* end beekeeping */
 
 /* feedback */
