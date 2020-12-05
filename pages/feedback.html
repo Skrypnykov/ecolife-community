@@ -49,7 +49,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Тварини в екології</a>
                         <div class="dropdown-menu mt-3 nav-submenu" aria-labelledby="navbarDropdown3">
                             <a class="dropdown-item" href="birds-nest.html">Пташині гнізда на лініях електропередачі</a>
-                            <a class="dropdown-item" href="#">Екологічне бджільництво</a>
+                            <a class="dropdown-item" href="beekeeping.html">Екологічне бджільництво</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -75,6 +75,145 @@
             </nav>
         </div>
     </div>
+
+    <section class="feedback">
+        <div class="container-content">
+            <h2 class="feedback-title">Залишити звернення</h2>
+        </div>
+
+        <div class="feedback-form-wrapper">
+            <div class="container-content">
+                <form class="feedback-form" action="">
+                    <div class="form-row feedback-form-row">
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn feedback-btn">Реєстраційні дані заявника</button>
+                        </div>
+                        <div class="form-group col-md-6 text-right">
+                            <button type="submit" class="btn feedback-btn">Редагувати</button>
+                        </div>
+                    </div>
+                    <div class="form-bg">
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-5 feedback-form-group">
+                                <label for="inputSurname" class="feedback-label">Прізвище</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputSurname" placeholder="">
+                            </div>
+                            <div class="form-group col-md-3 feedback-form-group">
+                                <label for="inputName" class="feedback-label">Ім’я</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputName" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4 feedback-form-group">
+                                <label for="inputPatronymic" class="feedback-label">По батькові</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputPatronymic" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row feedback-form-row"> 
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputEmail" class="feedback-label">E-mail</label>
+                                <input type="email" class="form-control feedback-form-control" id="inputEmail">
+                            </div>
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputBirth" class="feedback-label">Рік народження</label>
+                                <input type="date" class="form-control feedback-form-control" id="inputBirth">
+                            </div>
+                        </div>
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputSocial" class="feedback-label">Соціальний стан</label>
+                                <select id="inputSocial" class="form-control feedback-form-control">
+                                    <option selected>...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputPreferential" class="feedback-label">Пільгова категорія</label>
+                                <select id="inputPreferential" class="form-control feedback-form-control">
+                                    <option selected>...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-4 feedback-form-group">
+                                <label for="inputRedion" class="feedback-label">Область</label>
+                                <select class="form-control feedback-form-control" name="region" id="inputRedion">
+                                    <option value="25">обл. Чернігівська</option>
+                                    <option value="24">обл. Чернівецька</option>
+                                    <option value="23">обл. Черкаська</option>
+                                    <option value="22">обл. Хмельницька</option>
+                                    <option value="21">обл. Херсонська</option>
+                                    <option value="20">обл. Харківська</option>
+                                    <option value="19">обл. Тернопільська</option>
+                                    <option value="18">обл. Сумська</option>
+                                    <option value="17">обл. Рівненська</option>
+                                    <option value="16">обл. Полтавська</option>
+                                    <option value="15">обл. Одеська</option>
+                                    <option value="14">обл. Миколаївська</option>
+                                    <option value="13">обл. Львівська</option>
+                                    <option value="12">обл. Луганська</option>
+                                    <option value="11">обл. Кіровоградська</option>
+                                    <option value="10">обл. Івано-Франківська</option>
+                                    <option value="9">обл. Запорізька</option>
+                                    <option value="8">обл. Закарпатська</option>
+                                    <option value="7">обл. Житомирська</option>
+                                    <option value="6" selected="selected">обл. Донецька</option>
+                                    <option value="5">обл. Дніпропетровська</option>
+                                    <option value="4">обл. Волинська</option>
+                                    <option value="3">обл. Вінницька</option>
+                                    <option value="2">м. Київ</option>
+                                    <option value="1">обл. Київська</option>				
+                                </select>
+                            </div>
+                            <div class="form-group col-md-5 feedback-form-group">
+                                <label for="inputСity" class="feedback-label">Місто</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputСity" placeholder="">
+                            </div>
+                            <div class="form-group col-md-3 feedback-form-group">
+                                <label for="inputZip" class="feedback-label">Поштовий індекс</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputZip" placeholder="">
+                            </div>                            
+                        </div>
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-8 feedback-form-group">
+                                <label for="inputAddress" class="feedback-label">Поштова адреса</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputAddress" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4 feedback-form-group">
+                                <label for="inputPhone" class="feedback-label">Контактний телефон</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputPhone" placeholder="">
+                            </div>
+                        </div>
+                    </div><!-- end form-bg-->
+                    <h5 class="feedback-form-title">Інформація про проблему</h5>
+                    <div class="form-bg">
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputLocation" class="feedback-label">Координати</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputLocation" placeholder="">
+                                <p class="form-text-note">Вибрати на карті</p>
+                            </div>
+                            <div class="form-group col-md-6 feedback-form-group">
+                                <label for="inputAddress2" class="feedback-label">Адреса</label>
+                                <input type="text" class="form-control feedback-form-control" id="inputAddress2" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-12 feedback-form-group">
+                                <label for="formControlTextarea1" class="feedback-label">Додаткове повідомлення по суті</label>
+                                <textarea class="form-control feedback-textarea" id="formControlTextarea1" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row feedback-form-row">
+                            <div class="form-group col-md-12 text-center">
+                                <button type="submit" class="btn btn-success feedback-form-btn">Відправити</button>
+                            </div>
+                        </div>
+                    </div><!-- end form-bg-->
+                </form><!-- end feedback-form -->
+            </div>
+        </div>
+
+    </section>
 
     <footer class="footer" id="footer">
         <div class="dropdown-divider"></div>
@@ -113,7 +252,7 @@
                                     <a class="nav-link list-group-link" href="birds-nest.html">Пташині гнізда на лініях електропередачі</a>
                                 </li>
                                 <li class="nav-item list-group-item">
-                                    <a class="nav-link list-group-link" href="#">Екологічне бджільництво</a>
+                                    <a class="nav-link list-group-link" href="beekeeping.html">Екологічне бджільництво</a>
                                 </li>
                             </ul>
                         </li>

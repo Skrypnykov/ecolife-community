@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* global */
 * {
@@ -21,11 +22,19 @@ html {
 	margin-left: 0;
 	margin-right: 0;
 }
+.col-2,
 .col-3,
 .col-4,
+.col-5,
 .col-6,
 .col-8,
-.col-12 {
+.col-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-8 {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -539,6 +548,8 @@ html {
 	margin-bottom: 2.2rem;
 }
 .search-form-control {
+	border-radius: 0;
+	border: 0;
 	padding: 0 0 0 .4em;
 }
 .form-control-date {
@@ -1049,6 +1060,64 @@ html {
 /* end beekeeping */
 
 /* feedback */
+.feedback-title {
+	font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.95em;
+    line-height: 3rem;
+	color: #5F7C59;
+	margin-bottom: 3.45rem;
+}
+.feedback-form-wrapper {
+	margin-bottom: 5rem;
+}
+.feedback-btn {
+	font-family: Raleway;
+	font-size: 1.5em;
+	margin-bottom: 2rem;
+}
+.form-bg {
+	background-color: #2D4D22;
+	padding: 4rem 1.6rem;
+}
+.feedback-form-row {
+	margin: 0 0 1.6rem;
+}
+.feedback-form-group:not(:last-child) {
+	padding-right: 5rem;
+}
+.feedback-label {
+	font-family: Raleway;
+	font-size: 1.5em;
+	line-height: 1.8rem;
+	color: #FFFFFF
+}
+.feedback-textarea,
+.feedback-form-control {
+	border-radius: 0;
+	border: 0;
+}
+.feedback-form-title {
+	font-family: Raleway;
+	font-size: 1.5em;
+	margin: 3.45rem 0 2.45rem;
+}
+.form-text-note {
+	font-family: Roboto;
+	font-size: 1.2em;
+	line-height: 1.4rem;
+	color: #0047FF;
+	margin-top: .8rem;
+}
+.feedback-form-btn {
+	font-family: Raleway;
+	font-size: 1.75em;
+	line-height: 2.1rem;
+	color: #272727;
+	background: #FFFFFF;
+	border-radius: 0;
+	padding: .95rem 6.25rem;
+}
 /* end feedback */
 
 /* footer */
@@ -1090,29 +1159,27 @@ html {
 .form-inline {
 	margin-top: 1.25rem;
 }
-.form-control {
+.search-form-footer {
 	border-radius: 0;
 	border-top: 0;
 	border-right: 0;
 	border-left: 0;
 	padding-bottom: 0;
+	padding-left: 0;
 }
-.form-control:focus {
+.search-form-footer:focus {
 	box-shadow: none;
 	border-bottom: 1px solid #ced4da;
 }
-.form-inline .form-control {
+.form-inline .search-form-footer {
 	width: 250px;
 }
-.form-control::placeholder {
+.search-form-footer::placeholder {
 	font-family: Raleway;
 	font-weight: 300;
 	font-size: .875em;
 	line-height: 1rem;
 	color: #525252;
-}
-.search-form-footer {
-	padding-left: 0;
 }
 .social-wrapper {
   	margin-top: 9rem;
