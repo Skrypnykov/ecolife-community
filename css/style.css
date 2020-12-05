@@ -1076,9 +1076,12 @@ html {
 	font-size: 1.5em;
 	margin-bottom: 2rem;
 }
+.feedback-btn:hover {
+	color: #6c757d;
+}
 .form-bg {
 	background-color: #2D4D22;
-	padding: 4rem 1.6rem;
+	padding: 4rem 1.6rem 3rem;
 }
 .feedback-form-row {
 	margin: 0 0 1.6rem;
@@ -1096,6 +1099,14 @@ html {
 .feedback-form-control {
 	border-radius: 0;
 	border: 0;
+}
+.feedback-textarea,
+.feedback-form-control {
+	font-family: Raleway;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.4rem;
+	color: #525252;
 }
 .feedback-form-title {
 	font-family: Raleway;
