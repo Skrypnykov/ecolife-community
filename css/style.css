@@ -946,7 +946,6 @@ html {
 .beekeeping-card-left {
 	margin-bottom: 6.25rem;
 }
-
 .corn-rectangle {
 	background: #FBF7D3;
 	height: 100%;
@@ -957,7 +956,6 @@ html {
 .bee-card-left {
 	padding: 1rem 2rem 1rem 5rem;
 }
-
 .bee-card-content {
 	font-family: Raleway;
 	font-size: 1.4em;	
@@ -986,8 +984,67 @@ html {
 	margin: 1.5rem 3rem 2rem;
 	padding: 1.4rem 2rem;
 }
-
-
+@media (max-width: 992px) {
+	.bee-card-content {
+		font-size: 1.125em;
+		margin-bottom: 1rem;
+	}
+	.beekeeping-analysis-conclusion {
+		font-size: 1.4em;
+		line-height: 1.6rem;
+	}
+	.analysis-conclusion-item {
+		font-size: 1.3em;
+		line-height: 1.5rem;
+		margin: 1rem 3rem 1.5rem;
+		padding: 1.2rem 1.5rem;
+	}
+}
+@media (max-width: 768px) {
+	.beekeeping-card-right, 
+	.beekeeping-card-left {
+		margin-bottom: 3rem;
+	}
+	.bee-card-right {
+		padding: 1rem 1.2rem;
+	}
+	.bee-card-left {
+		padding: 1rem 1.2rem 1rem 2rem;
+	}
+	.bee-card-content {
+		font-size: 1em;
+		line-height: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	.beekeeping-analysis {
+		margin-bottom: 3rem;
+	}
+	.beekeeping-analysis-conclusion {
+		font-size: 1.4em;
+		line-height: 1.6rem;
+	}
+	.analysis-conclusion-item {
+		font-size: 1.3em;
+		line-height: 1.5rem;
+		margin: 1rem 3rem 1.5rem;
+		padding: 1.2rem 1.5rem;
+	}
+}
+@media (max-width: 576px) {
+	.bee-card {
+		position: static!important;
+	}
+	.beekeeping-analysis-conclusion {
+		font-size: 1.1em;
+		line-height: 1.4rem;
+	}
+	.analysis-conclusion-item {
+		font-size: 1em;
+		line-height: 1.3rem;
+		margin: 1rem 1.5rem;
+		padding: 1.2rem 1rem;
+	}
+}
 /* end beekeeping */
 
 /* feedback */
