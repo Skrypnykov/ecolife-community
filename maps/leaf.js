@@ -2,7 +2,7 @@
 
 var map = L.map( 'map', {
   style: 'mapbox://styles/osmua/ck4wswg1w00c81clktu2l8ekz',
-  center: [49.3, 31.25],
+  center: [48.5, 30.8],
   minZoom: 6,
   zoom: 6,
   scrollWheelZoom: false,  
