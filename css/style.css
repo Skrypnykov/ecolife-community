@@ -182,6 +182,12 @@ html {
 		padding: 2.45rem 0 1.8rem;
 	}
 }
+@media (max-width: 400px) {
+	.breadcrumb-item.active {
+		display: none;
+	}
+}
+
 /* end breadcrumb ===================== */
 
 /* section index main*/
@@ -936,24 +942,50 @@ html {
 	color: #5F7C59;
 	margin-bottom: 2rem;
 }
-.beekeeping-card-right {
+.beekeeping-card-right,
+.beekeeping-card-left {
 	margin-bottom: 6.25rem;
-	height: 100%;
-	-padding: 1em;
 }
 
 .corn-rectangle {
 	background: #FBF7D3;
 	padding: 1rem;
+	height: 100%;
 }
 .bee-card-right {
-	padding: .5rem 2rem;
+	padding: 1rem 2rem;
 }
+.bee-card-left {
+	padding: 1rem 2rem 1rem 5rem;
+}
+
 .bee-card-content {
 	font-family: Raleway;
 	font-size: 1.4em;	
 	color: #272727;
-	margin-bottom: 2.45rem;
+	margin-bottom: 3rem;
+}
+.beekeeping-analysis {
+	background-color: #FBF7D3;
+	padding-bottom: 2rem;
+	margin-bottom: 6rem;
+}
+.beekeeping-analysis-conclusion {
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 1.6em;
+	line-height: 1.8rem;
+	text-align: center;
+	padding: 2rem 1.2rem 1rem;
+	margin-bottom: 0;
+}
+.analysis-conclusion-item {
+	font-family: Raleway;
+	font-size: 1.5em;
+	line-height: 1.8rem;
+	background-color: #92C188;
+	margin: 1.5rem 3rem 2rem;
+	padding: 1.4rem 2rem;
 }
 
 
@@ -1064,7 +1096,6 @@ html {
 		margin-bottom: .625rem;
 	}
 }
-
 /* end footer */
 
 /* animate */
