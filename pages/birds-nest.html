@@ -8,12 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
-    <!-- -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-    
+    <!-- Font Awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='https://unpkg.com/leaflet@0.7.7/dist/leaflet.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
+
+    <style>
+        .marker-cluster-small {
+            background-color: rgba(253, 156, 115, 0.6);
+        }
+        .marker-cluster-small div {
+            background-color: rgba(241, 128, 23, 0.6);
+        }
+    </style>
     
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -76,6 +97,110 @@
         </div>
     </div>
 
+    <section class="birds-nest">
+        <div class="container-content">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="birds-nest-title">Сервіс моніторингу та збору данних щодо пташиних гнізд на лінії електропередачі</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="map" class="birds-map"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center birds-gallery-title">Галерея</h4>
+                </div>
+            </div>
+
+            <!-- slick slider -->
+            <div class="birds-slider">
+                <div class="birds-slider-list">
+                    <div class="birds-slider-item">            
+                        <img class="img-fluid" src="../img/birds/g-bird-1.png" alt="">
+                    </div>
+                    <div class="birds-slider-item">
+                        <img class="img-fluid" src="../img/birds/g-bird-2.png" alt="">
+                    </div>
+                    <div class="birds-slider-item">
+                        <img class="img-fluid" src="../img/birds/g-bird-3.png" alt="">
+                    </div>
+                    <div class="birds-slider-item">
+                        <img class="img-fluid" src="../img/birds/g-bird-1.png" alt="">
+                    </div>
+                    <div class="birds-slider-item">
+                        <img class="img-fluid" src="../img/birds/g-bird-2.png" alt="">
+                    </div>
+                    <div class="birds-slider-item">
+                        <img class="img-fluid" src="../img/birds/g-bird-3.png" alt="">
+                    </div>
+                </div> <!-- end gallery-slider-list -->
+                <div class="birds-slider-arrow"></div>
+            </div><!-- end slick slider -->
+
+            <!-- slick content slider-->
+            <div class="birds-content-slider position-relative">
+                <div class="birds-content-item">
+                    <div class="card bg-transparent birds-card">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body birds-card-body">
+                                    <h5 class="card-title birds-card-title">Цікаві факти про лелек</h5>
+                                    <p class="card-text birds-card-text">Лелека благородна птиця, її люблять у народі, оспівують у піснях і віршах. Дивно красиві птахи. Лелеки відрізняються від інших красою 
+                                        і граціозністю. Зовні пташка схожа на чаплю, тільки велика. Зазвичай гнізда лелеки влаштовують 
+                                        на деревах. Останнім часом, можна спостерігати гнізда на лініях електропередач. Лелеки не бояться людей і селяться на даху сільських будинків. 
+                                        </p>
+                                    <p class="card-text birds-card-text">Деякі сільські жителі будують місця для облаштування гнізд, обривають гілки на деревах 
+                                        і ставлять жердини з колом. Присутність людей лелек не бентежить. Цивілізація їх не лякає. І в той же час, вони обережні по відношенню до людини.
+                                        </p>
+                                    <p class="card-text birds-card-text">З усіх лелек найбільш відомий білий лелека. Відлітає зимувати в Індію або в Африку. Білий лелека любить селитися на березі водойм. Живе він на березі річок, озер і боліт. Тому відмінно плаває. Пересувається лелека теж добре. Швидко бігає, особливо, коли побачить здобич. Чудово літає і здійснює щорічні великі перельоти. Швидкість розвиває до 45 км/год. Спить лелека, стоячи 
+                                        на одній нозі, почергово змінюючи її уві сні.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../img/birds/c-bird-1.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="birds-content-item">
+                    <div class="card bg-transparent birds-card">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body birds-card-body">
+                                    <p class="card-text birds-card-text">Чорний лелека живе в лісі, в горах. Він воліє гніздитися подалі від людини. Лелеки дуже дбайливі батьки. Мати і батько ніжно по черзі висиджують яйця, зігріваючи своїм теплом. Висиджують до п'яти яєць.</p>
+                                    <p class="card-text birds-card-text">З появою пташенят батьки годують і поять пташенят з ранку до вечора. Пташенята лелек з самого народження харчуються комахами. Весь час батьки у пошуках води і їжі для своїх пташенят. Батьки викидають їжу з дзьоба, пташенята хапають її на льоту. Принесена вода плавно переливається в дзьоб пташенят. Перші два місяці лелеки добувають їжу і годують своє потомство. Апетит у пташенят хороший. Харчуються вони чудово і швидко набирають вагу. Від ослаблених і хворих пташенят лелеки позбавляються. Дорослі і зміцнілі пташенята, летять за прожитком самі окремо від батьків. Корм біля водойм різноманітний, це комахи, змії, жаби, ящірки, гризуни і т. д.</p>
+                                    <p class="card-text birds-card-text">Лелека велика птиця. Висота її досягає ста двадцяти сантиметрів. Білий лелека важить близько чотирьох кілограмів, чорний лелека - близько трьох кілограмів. Ноги, шия і дзьоб у лелеки довгі. Розмах крил 1.5 - 2 метри. Лелека в польоті витягує шию і ноги, повільно і плавно махає крилами. Лелеки птахи майже мовчазні. Володіє голосом чорний лелека. Білий лелека, стукає однією половинкою дзьоба, створюючи при цьому певний звук, який стає зрозумілим всім оточуючим птахам.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../img/birds/c-bird-1.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="birds-content-item">
+                    <div class="card bg-transparent border-0 birds-card">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body birds-card-body">   
+                                    <p class="card-text birds-card-text">У кожної птиці свій план споруди затишного гнізда. Для великої птиці і «будинок» великий. Білий лелека готує для гнізда палиці, гілки, укладає їх в одному місці, «будинок» готовий. Чорний лелека будує гніздо грунтовно, сучки кладе акуратно використовуючи при цьому землю і глину. Одне гніздо використовується лелеками кілька років, птиці з року в рік повертаються в свої звиті гнізда. Самці прилітають заздалегідь і охороняють гніздо до повернення самки від суперників. Щорічно для виведення пташенят гніздо оновлюється і ремонтується. Гніздо з кожним роком збільшується в розмірі. У ньому можуть оселитися дрібні птахи. Але лелеки пильні, надійно охороняють своє житло від сторонніх відвідувачів.</p>
+                                    <p class="card-text birds-card-text">Живе птах довго, в середньому до 20 років. У лелек майже немає ворогів, за винятком великих орлів і крокодилів. Лелека благородна птиця, її люблять у народі. Оспівують у піснях і віршах.</p>
+                                    <p class="card-text birds-card-text">Є гарна прикмета. Коли лелека повертається на вподобане місце, та ще й у парі з супутницею, сільських жителів чекає радісна подія, яка віщує народження дитини. Молоді сільські жителі облаштовують для лелек місця для гнізд і виведення потомства.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../img/birds/c-bird-1.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end slick content slider-->
+            <ul class="d-flex flex-col birds-content-dots"></ul>
+        </div><!-- end container-content -->
+    </section>
     
     
   
@@ -147,6 +272,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="../js/birds-slider.js"></script>
     <script src="../js/script.js"></script>
+
+    <script type='text/javascript' src='../maps/markers.js'></script>
+    <script type='text/javascript' src='../maps/birdsmap.js'></script>
+
+    
+
 </body>
 </html>

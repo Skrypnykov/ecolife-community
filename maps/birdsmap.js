@@ -14,14 +14,16 @@ new L.Control.Zoom({
   position: 'bottomright' 
 }).addTo(map);
 
-// marker
+
 
 L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   subdomains: ['a','b','c']
-}).addTo( map );
+}).addTo(map);
 
-var myURL = jQuery( 'script[src$="leaf.js"]' ).attr( 'src' ).replace( 'leaf.js', '' );
+// marker
+
+var myURL = jQuery( 'script[src$="birdsmap.js"]' ).attr( 'src' ).replace( 'birdsmap.js', '' );
 
 var myIcon = L.icon({
   iconUrl: myURL + 'images/pin24.png',

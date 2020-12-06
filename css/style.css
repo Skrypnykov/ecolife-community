@@ -33,11 +33,11 @@ html {
 .col-md-2,
 .col-md-3,
 .col-md-4,
-.col-md-5,
 .col-md-6,
 .col-md-8 {
 	padding-left: 0;
 	padding-right: 0;
+	border-left:none;
 }
 .btn {
 	border: none;
@@ -521,7 +521,6 @@ html {
 }
 /* end section green-tourism */
 
-
 /* travel-search */
 .travel-search {
 	margin-bottom: 6.25rem;
@@ -752,7 +751,7 @@ html {
 .ecomapa-card {
 	margin-bottom: 6rem;
 }
-#map {
+.ecomap {
 	width: 100%;
 	height: 600px;
 	border: 1px solid rgba(75,133,62,.3);
@@ -788,7 +787,7 @@ html {
 	margin-left: 1rem;
 }
 @media (max-width: 992px) {
-	#map {
+	.ecomap {
 		max-width: 830px; 
 		height: 500px;
 	}
@@ -1152,9 +1151,168 @@ html {
 		padding: .95rem 2.25rem;
 	}
 }
-
-
 /* end feedback */
+
+/* birds-nets */
+.birds-nest {
+	margin-bottom: 5rem;
+}
+.birds-nest-title {
+	font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 2.5rem;
+	color: #5F7C59;
+	margin-bottom: 2.5rem;
+}
+.birds-map {
+	width: 100%;
+	height: 600px;
+	border: 1px solid rgba(75,133,62,.3);
+	margin-bottom: 5rem;
+}
+.birds-gallery-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.8em;
+	line-height: 2.5rem;
+	color: #5F7C59;
+}
+.birds-slider {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.birds-slider-item:not(:last-child) {
+	padding-right: 10px;
+}
+.birds-slider-list {
+	margin: 0 2em;
+}
+.birds-slider-arrow {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	bottom: 250px;
+}
+.birds-arrow-prev {
+	font-size: 2em;
+	color: #5F7C59;
+}
+.birds-arrow-next {
+	font-size: 2em;
+	color: #5F7C59;
+}
+.birds-content-item:focus {
+	outline: none;
+}
+.birds-card {
+	border: none!important;
+}
+.birds-card-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.8em;
+	line-height: 2.2rem;
+	color: #5F7C59;
+	margin-bottom: 3rem;
+}
+.birds-card-text {
+	font-family: Raleway;
+	font-size: 1.4em;
+	line-height: 1.7rem;
+	color: #272727;
+	margin-bottom: 2rem;
+}
+.birds-content-slider {
+	margin-bottom: 5rem;
+}
+/* dots */
+.birds-content-dots {
+	position: absolute;
+  	bottom: -45px;
+  	display: block;
+  	width: 100%;
+  	padding: 0;
+  	list-style: none;
+  	text-align: center;
+}
+.birds-content-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+.birds-content-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+.birds-content-dots li:not(:last-child) {
+	margin-right: 1.5rem;
+}
+
+.birds-content-dots li button:hover,
+.birds-content-dots li button:focus {
+	outline: none;
+  }
+.birds-content-dots li button:hover:before,
+.birds-content-dots li button:focus:before {
+  opacity: 1;
+}
+
+.birds-content-dots li button:before {
+  font-family: 'slick';
+  font-size: 4rem;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .5;
+  color: #BCFFAE;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  -webkit-text-stroke: 1px #BCFFAE;
+  text-shadow: 1px 1px 0 #BCFFAE, -1px -1px 0 #BCFFAE, 1px -1px 0 #BCFFAE, -1px 1px 0 #BCFFAE, 1px 1px 0 #BCFFAE;
+}
+.birds-content-dots li.slick-active button:before {
+  opacity: 1;
+  color: #BCFFAE;
+}
+
+/* end dots */
+
+@media (max-width: 992px) {
+	.birds-nest-title {
+		font-size: 1.5em;
+		line-height: 2rem;
+		margin-bottom: 2rem;
+	}
+	.birds-slider-arrow {
+		bottom: 210px;
+	}
+}
+@media (max-width: 768px) {
+	
+}
+@media (max-width: 576px) {
+
+}
+/* end birds-nets */
 
 /* footer */
 .footer {
