@@ -29,6 +29,6 @@ $(document).ready(function(){
     $('.birds-content-slider').slick({
         arrows: false,
         dots: true,
-        dotsClass: "birds-content-dots",
+        dotsClass: 'birds-content-dots',
     });
   });
