@@ -1202,6 +1202,13 @@ html {
 	font-size: 2em;
 	color: #5F7C59;
 }
+
+.birds-content-slider {
+	margin-bottom: 6rem;
+}
+.birds-content-item {
+	margin-bottom: 3rem;
+}
 .birds-content-item:focus {
 	outline: none;
 }
@@ -1218,14 +1225,12 @@ html {
 }
 .birds-card-text {
 	font-family: Raleway;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	line-height: 1.7rem;
 	color: #272727;
 	margin-bottom: 2rem;
 }
-.birds-content-slider {
-	margin-bottom: 5rem;
-}
+
 /* dots */
 .birds-content-dots {
 	position: absolute;
