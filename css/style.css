@@ -1343,6 +1343,48 @@ html {
 }
 /* end birds-nets */
 
+/* virtual-tourism */
+.vtourism-main-card {
+	background-image: url(../img/tourism/v-bg.png);
+	height: 687px;
+	margin-bottom: 5rem;
+}
+.vtourism-card-box {
+	background: rgba(79, 81, 83, 0.85);
+}
+.vtourism-card-text {
+	font-family: Raleway;
+	font-size: 1.5em;
+	line-height: 1.8rem;
+	color: #F2E8E8;
+}
+
+.vtourism-card-right,
+.vtourism-card-left {
+	margin-bottom: 5rem;
+}
+.vtourism-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.8em;
+	line-height: 2.2rem;
+	color: #4F5153;
+}
+.vtourism-content {
+	font-family: Raleway;
+	font-size: 1.5em;
+	line-height: 1.8rem;
+	color: #272727;
+}
+.vtourism-link {
+	font-family: "Poiret One";
+	font-size: 1.6em;
+	line-height: 1.8rem;
+	color: #000000;
+}
+
+/* end virtual tourism */
+
 /* footer */
 .footer {
 	margin-bottom: 2.45rem;
