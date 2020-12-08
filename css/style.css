@@ -1400,7 +1400,74 @@ html {
 	text-decoration: none;
 	color: #6c757d;
 }
+@media (max-width: 992px) {
+	.vtourism-card-right .vtourism-body-wrapper {
+		padding-top: 1rem;
+		padding-left: 2rem;
+	}
+	.vtourism-card-left .vtourism-body-wrapper {
+		padding-top: 1rem;
+		padding-right: 2rem;
+	}
+	.vtourism-card-text {
+		font-size: 1.4em;
+		line-height: 1.7rem;
+	}
+	.vtourism-title {
+		font-size: 1.6em;
+		line-height: 2rem;
+		margin-bottom: 2rem;
+	}
+	.vtourism-content {
+		font-family: Raleway;
+		font-size: 1.3em;
+		line-height: 1.6rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media (max-width: 768px) {
+	.vtourism-title {
+		font-size: 1.5em;
+		line-height: 1.8rem;
+		margin-bottom: 1.5rem;
+	}
+	.vtourism-content {
+		font-family: Raleway;
+		font-size: 1.1em;
+		line-height: 1.4rem;
+		margin-bottom: 1.4rem;
+	}
 
+}
+@media (max-width: 576px) {
+	.vtourism-card-right, 
+	.vtourism-card-left {
+		margin-bottom: 3rem;
+		padding: 0 1rem;
+	}
+	.vtourism-card-left .vtourism-body-wrapper {
+		padding-right: 0;
+		padding-bottom: 1rem;
+	}
+	.vtourism-card-right .vtourism-body-wrapper {
+		padding-top: 1rem;
+		padding-left: 0;
+	}
+}
+@media (max-width: 400px) {
+	.vtourism-card-box:first-child {
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+		max-width: 450px;
+	}
+	.vtourism-card-box {
+		padding: 1.5rem;
+	}
+	.vtourism-card-text {
+		font-size: 1.3em;
+		line-height: 1.6rem;
+	}
+}
 /* end virtual tourism */
 
 /* footer */
@@ -1506,7 +1573,6 @@ html {
 /* end footer */
 
 /* animate */
-
 .intro a:hover {
 	transition: .8s all;
     -webkit-transition: .8s all;
@@ -1519,7 +1585,6 @@ html {
     -o-transform: rotatey(360deg);
     -ms-transform: rotatey(360deg);
 }
-
 /* end animate */
 
 /*
