@@ -1350,7 +1350,13 @@ html {
 	margin-bottom: 5rem;
 }
 .vtourism-card-box {
-	background: rgba(79, 81, 83, 0.85);
+	padding: 2rem;
+	background: rgba(79, 81, 83, 0.85);	
+}
+.vtourism-card-box:first-child {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	max-width: 450px;
 }
 .vtourism-card-text {
 	font-family: Raleway;
@@ -1358,10 +1364,17 @@ html {
 	line-height: 1.8rem;
 	color: #F2E8E8;
 }
-
 .vtourism-card-right,
 .vtourism-card-left {
 	margin-bottom: 5rem;
+}
+.vtourism-card-right .vtourism-body-wrapper {
+	padding-top: 2rem;
+	padding-left: 3rem;
+}
+.vtourism-card-left .vtourism-body-wrapper {
+	padding-top: 2rem;
+	padding-right: 3rem;
 }
 .vtourism-title {
 	font-family: Raleway;
@@ -1369,12 +1382,14 @@ html {
 	font-size: 1.8em;
 	line-height: 2.2rem;
 	color: #4F5153;
+	margin-bottom: 3rem;
 }
 .vtourism-content {
 	font-family: Raleway;
 	font-size: 1.5em;
 	line-height: 1.8rem;
 	color: #272727;
+	margin-bottom: 2rem;
 }
 .vtourism-link {
 	font-family: "Poiret One";
