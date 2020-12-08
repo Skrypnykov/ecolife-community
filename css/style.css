@@ -163,8 +163,6 @@ html {
 		padding: .625rem 0;
 	}
 }
-
-
 /* end navbar */
 
 /* breadcrumb */
@@ -1393,9 +1391,14 @@ html {
 }
 .vtourism-link {
 	font-family: "Poiret One";
+	font-weight: 600;
 	font-size: 1.6em;
 	line-height: 1.8rem;
 	color: #000000;
+}
+.vtourism-link:hover {
+	text-decoration: none;
+	color: #6c757d;
 }
 
 /* end virtual tourism */
