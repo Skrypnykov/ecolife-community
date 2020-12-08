@@ -1380,9 +1380,10 @@ html {
 .vtourism-content {
 	font-family: Raleway;
 	font-size: 1.5em;
-	line-height: 1.8rem;
+	line-height: 1.9rem;
 	color: #272727;
 	margin-bottom: 2rem;
+	text-align: justify;
 }
 .vtourism-link {
 	font-family: "Poiret One";
@@ -1432,7 +1433,6 @@ html {
 		line-height: 1.4rem;
 		margin-bottom: 1.4rem;
 	}
-
 }
 @media (max-width: 576px) {
 	.vtourism-card-right, 
@@ -1464,6 +1464,33 @@ html {
 	}
 }
 /* end virtual tourism */
+
+/* actual-news */
+.actual-news-card {
+	margin-bottom: 3.55rem;
+}
+.actual-news-content {
+	top: auto;
+	bottom: 2.4rem;
+}
+.actual-news-title {
+	font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.95em;
+    line-height: 3rem;
+	color: #5F7C59;
+	margin-bottom: 2rem;
+}
+.actual-news-text {
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 1.8em;
+	line-height: 2.2rem;
+	background-color: #2D4D22;
+	display: inline-block;
+	padding: 1.3rem 2rem;
+}
+/* end actual-news */
 
 /* footer */
 .footer {
