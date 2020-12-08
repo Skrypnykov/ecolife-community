@@ -89,8 +89,8 @@ html {
 .dropdown-item {
 	padding: .25rem 1rem;
 	font-family: Raleway;
-	font-weight: 400;
-	font-size: 1em;
+	font-weight: 500;
+	font-size: .95em;
 	color: #000;
 }
 .dropdown-item:hover {
@@ -102,7 +102,7 @@ html {
 	display:none;
 }
 .nav-submenu {
-	background-color: #F7FFF9 ;
+	background-color: rgba(235,249,238,.9) ;
 }
 .nav-submenu .dropdown-item:not(:last-child) {
 	border-bottom: 1px solid rgba(75,133,62,.3);
