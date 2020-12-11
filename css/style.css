@@ -380,6 +380,7 @@ html {
 	bottom: 0;
 	text-align: center;
 	padding: 1rem;
+	width: 100%;
 }
 .news-card:not(:last-child) {
 	margin-right: 2.55rem;
@@ -1502,6 +1503,100 @@ html {
 	color: #272727;
 	text-align: justify;
 	margin-bottom: 2rem;
+}
+.news-form-box {
+	border: 1px solid #2D4D22;
+	padding: 1.2rem 2rem;
+	margin-bottom: 3rem;
+}
+.news-form-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1.8rem;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+.news-form-label {
+	display: block;
+	margin: 0;
+}
+.news-form-group {
+	margin-bottom: 1.5rem;
+}
+.news-form-control {
+	font-family: Raleway;
+	font-size: 1.3em;
+	line-height: 1.8rem;
+	color: #777777;
+	border-radius: 0;
+	background-color: transparent;
+	border: 1px solid #000000;
+	padding: .375rem .5rem;
+}
+.news-form-btn {
+	font-family: Raleway;
+	font-size: .9em;
+	line-height: 1rem;
+	padding: .6rem 1.2rem;
+	border-radius: 0;
+	background-color: #4B853E;
+}
+.news-comment {
+	margin-bottom: 8rem;
+}
+.news-comment-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.75em;
+	line-height: 2rem;
+	color: #5F7C59;
+	margin-bottom: 2.5rem;
+}
+.news-comment-wrapper {
+	background: #2D4D22;
+	padding: 2.5rem 1.5rem 1.5rem;
+}
+.news-comment-control {
+	font-family: Raleway;
+	font-size: 1.3em;
+	line-height: 1.8rem;
+	color: #777777;
+	border-radius: 0;
+	margin-bottom: 1.5rem;
+}
+.news-comment-submit {
+	font-family: Raleway;
+	font-size: 1.1em;
+	line-height: 2.1rem;
+	color: #272727;
+	background: #FFFFFF;
+	border-radius: 0;
+	padding: .5rem 2.25rem;
+}
+.other-news-title {
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 1.75em;
+	line-height: 2rem;
+	color: #5F7C59;
+	margin-bottom: 2.5rem;
+}
+.other-news-group {
+	margin-bottom: 4rem;
+}
+.other-news-search {
+	text-align: center;
+	margin-bottom: 7rem;
+}
+.btn-other-news {
+    font-family: Raleway;
+    font-size: 1.5em;
+    line-height: 2.1rem;
+	color: #fff;
+	background: #4B853E;
+	border-radius: 0;
+    padding: .75rem 3.25rem;
 }
 /* end actual-news */
 
